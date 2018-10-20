@@ -20,6 +20,10 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
+const client.on('ready',async () => {
+       client.channels.find(ch => ch.id === "503201776934322178" && ch.type === 'voice').join();
+});
+
 const prefix = "1";
 /////////////////////////
 ////////////////////////
