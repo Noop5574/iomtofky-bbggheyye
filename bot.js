@@ -317,14 +317,14 @@ client.on('message', message => {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (1)**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .addField('1play', 'لتشغيل اغنية')
+        .addField('1join', 'دخول رومك الصوتي')
+        .addField('1disconnect', 'الخروج من رومك الصوتي')
+        .addField('1skip', 'تخطي الأغنية')
+        .addField('1pause', 'ايقاف الاغنية مؤقتا')
+        .addField('1resume', 'تكملة الاغنية')
+        .addField('1queue', 'اظهار قائمة التشغيل')
+        .addField('1np', 'اظهار الاغنية اللي انت مشغلها حاليا')
         .setFooter('(general_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
@@ -334,9 +334,9 @@ client.on('message', message => {
     if (message.content === 'general_commands') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
-        .addField('avatar', "افاتار الشخص المطلوب")
-        .addField('gif', 'البحث عن جيف انت تطلبه')
-        .addField('ping', 'معرفة ping البوت')
+        .addField('1avatar', "افاتار الشخص المطلوب")
+        .addField('1gif', 'البحث عن جيف انت تطلبه')
+        .addField('1ping', 'معرفة ping البوت')
         .setFooter('المزيد قريبا ان شاء الله!')
       message.channel.send(helpEmbed);
     }
